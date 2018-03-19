@@ -8,17 +8,17 @@ class Show < ActiveRecord::Base
     Show.maximum("rating")
   end
 
-  def lowest_rating 
+  def lowest_rating
     Show.minimum("rating")
-  end 
+  end
 
   def least_popular_show
     Show.minimum("rating")
-  end 
+  end
 
   def ratings_sum
     Show.sum("rating")
-  end 
+  end
 
   
 end
